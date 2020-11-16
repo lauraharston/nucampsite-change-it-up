@@ -29,7 +29,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4 text-nowrap">
-                    <a class="btn btn-info btn-lg" href="#reserveForm">Reserve Campsite</a>
+                    <a class="btn btn-info btn-lg" role="button" href="#reserveForm" data-toggle="tooltip" data-html="true" data-placement="bottom"title="Or call us at <br/><strong> 1-206-555-1234 </strong>">Reserve Campsite</a>
                 </div>
             </div> 
         </div>
@@ -49,6 +49,11 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li> 
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li> 
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
@@ -173,6 +178,12 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        
 </body>
 
 </html>
